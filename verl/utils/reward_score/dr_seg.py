@@ -4,8 +4,8 @@ from scipy.optimize import linear_sum_assignment
 import numpy as np
 
 import os
-from subproc.serve import QuantileServiceClient
-"vision_reasoner_dr_seg_version2.py"
+from drr_module.serve import QuantileServiceClient
+"dr_seg_version2.py"
 
 _QUANT_CLIENT = None
 def _get_quant_client():

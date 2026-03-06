@@ -1,4 +1,4 @@
-# Dr. Seg: Revisiting GRPO Training for Visual Large Language Models through Perception-Oriented Design
+# Dr. Seg: Revisiting GRPO Training for Visual Large Language Models through Perception-Oriented Design (CVPR 2026)
 
 > We revisit GRPO training for visual segmentation and detection and propose Dr. Seg, a simple plug-and-play framework featuring a Look-to-Confirm mechanism and a Distribution-Ranked Reward module. It requires no architectural modifications and integrates seamlessly with existing GRPO-based VLLMs. Extensive experiments show that Dr. Seg improves performance in complex visual scenarios while preserving strong generalization.
 
@@ -15,7 +15,7 @@ Overview of Dr. Seg:
 - [x] Release checkpoint
 - [x] Renew README
 - [x] Release training code
-- [ ] Release more evaluation code
+- [ ] Release evaluation code
 - [ ] Release dataset
 
 ## Installation
@@ -25,7 +25,7 @@ cd Dr-Seg
 conda create -n drseg python=3.12
 conda activate drseg
 pip install torch==2.6.0 torchvision==0.21.0
-pip install -e .
+pip install -e . --no-build-isolation
 ```
 
 ## Training

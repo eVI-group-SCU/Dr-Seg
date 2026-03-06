@@ -46,11 +46,8 @@ from verl.workers.fsdp_workers import FSDPWorker
 
 WorkerType = Type[Worker]
 
-# --- optional: quantile service client (lazy) ---
-try:
-    from subproc.serve import QuantileServiceClient
-except Exception:
-    QuantileServiceClient = None
+from drr_module.serve import QuantileServiceClient
+
 
 _quant_client = None
 def _get_quant_client():

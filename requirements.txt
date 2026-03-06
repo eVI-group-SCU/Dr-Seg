@@ -9,11 +9,13 @@ omegaconf
 pandas
 peft
 pillow
+psutil
 pyarrow>=15.0.0
 pylatexenc
 qwen-vl-utils
 scipy
 matplotlib
+ninja
 ipykernel
 sam2
 pycocotools
