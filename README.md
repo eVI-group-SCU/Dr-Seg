@@ -30,7 +30,7 @@ pip install -e . --no-build-isolation
 
 ## Training
 >[!NOTE]
->We recommend using 4×80GB GPUs and at least 500GB of RAM.  
+>We recommend using 4×80GB GPUs and at least 400GB of RAM.  
 >As a reference, it takes approximately 15 hours to run ~500 training steps on 4× H800 PCIe.  
 >Training Data (thanks to VisionReasoner): [🤗 MultiObject-7K](https://huggingface.co/datasets/Ricky06662/VisionReasoner_multi_object_7k_840)   
 
@@ -81,7 +81,20 @@ python3 training_scripts/model_merger.py --local_dir [path_to_your_actor_checkpo
 >[🤗 refcocoplus_val](https://huggingface.co/datasets/Ricky06662/refcocoplus_val) [🤗 refcocoplus_testA](https://huggingface.co/datasets/Ricky06662/refcocoplus_testA)  
 >[🤗 refcocog_val](https://huggingface.co/datasets/Ricky06662/refcocog_val) [🤗 refcocog_testA](https://huggingface.co/datasets/Ricky06662/refcocog_testA)  
 
+(1) Modify ```REASONING_MODEL_PATH``` in ``` evaluation_scripts/eval_segmentation_drseg.sh```: 
+```bash
+REASONING_MODEL_PATH:=your/path/to/checkpoint
+``` 
 
+(2)(Optional) Modify ```TEST_DATA_PATH:=Ricky06662/ReasonSeg_val``` in ``` evaluation_scripts/eval_segmentation_drseg.sh```: 
+```bash
+REASONING_MODEL_PATH:=datasete/you/want/to/eval
+``` 
+
+(3)Start evaluation:
+```bash
+bash evaluation_scripts/eval_segmentation_drseg.sh
+``` 
 
 ## Citation
 ```bibtex
