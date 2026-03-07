@@ -111,4 +111,7 @@ bash evaluation_scripts/eval_segmentation_drseg.sh
 
 This project builds upon several open-source efforts, including [VisionReasoner](https://github.com/JIA-Lab-research/VisionReasoner), [Seg-Zero](https://github.com/JIA-Lab-research/Seg-Zero), [EasyR1](https://github.com/hiyouga/EasyR1), [veRL](https://github.com/volcengine/verl), and [COCONut-PanCap](https://github.com/bytedance/coconut_cvpr2024). We also utilize pretrained models from [Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) and [SAM2](https://huggingface.co/facebook/sam2-hiera-large). We sincerely thank the authors and maintainers for releasing high-quality code and models, providing clear documentation and reproducible pipelines, and actively maintaining these projects, which significantly facilitated our implementation and evaluation.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=eVI-group-SCU/Dr-Seg&type=date&legend=top-left)](https://www.star-history.com/?repos=eVI-group-SCU%2FDr-Seg&type=date&legend=top-left)
 

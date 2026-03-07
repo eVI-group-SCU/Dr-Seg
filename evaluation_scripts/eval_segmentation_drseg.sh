@@ -23,12 +23,12 @@ MODEL_DIR=$(echo $REASONING_MODEL_PATH | tr -s '/' | sed -E 's/.*pretrained_mode
 : "${TEST_DATA_PATH:=Ricky06662/ReasonSeg_val}"
  # you can also use the following datasets:
 # : "${TEST_DATA_PATH:=Ricky06662/ReasonSeg_test}"
-# : "${TEST_DATA_PATH:=Ricky06662/Ricky06662/refcoco_val}"
-# : "${TEST_DATA_PATH:=Ricky06662/Ricky06662/refcoco_testA}"
-# : "${TEST_DATA_PATH:=Ricky06662/Ricky06662/refcocoplus_val}"
-# : "${TEST_DATA_PATH:=Ricky06662/Ricky06662/refcocoplus_testA}"
-# : "${TEST_DATA_PATH:=Ricky06662/Ricky06662/refcocog_val}"
-# : "${TEST_DATA_PATH:=Ricky06662/Ricky06662/refcocog_test}"
+# : "${TEST_DATA_PATH:=Ricky06662/refcoco_val}"
+# : "${TEST_DATA_PATH:=Ricky06662/refcoco_testA}"
+# : "${TEST_DATA_PATH:=Ricky06662/refcocoplus_val}"
+# : "${TEST_DATA_PATH:=Ricky06662/refcocoplus_testA}"
+# : "${TEST_DATA_PATH:=Ricky06662/refcocog_val}"
+# : "${TEST_DATA_PATH:=Ricky06662/refcocog_test}"
 
 
 TEST_NAME=$(echo $TEST_DATA_PATH | sed -E 's/.*\/([^\/]+)$/\1/')
